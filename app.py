@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 
 # Elasticsearch bağlantısını kurma
-es = Elasticsearch("http://10.150.238.177:9200")
+es = Elasticsearch("http://0.0.0.0:9200")
 
 @app.route('/data', methods=['GET'])
 def get_data():
